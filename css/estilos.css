@@ -49,25 +49,31 @@ body{
 
 
 #pie{
-	position: relative;
+	position: absolute;
 	background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	min-height: 50px;
+	min-height: 25px;
 	height: 2vh;
 	width: 100%;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
+
 }
 
 .formulario{
-	position: absolute;
-	top: 65px;
-	left: 10px;
-	height: 500px;
-	width: 100%;
+	position: relative;
+}
+
+#inps{
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 1rem;
+	height: 2em;
+	background-color: #ccc;
+}
+#inps:focus{
+	background-color: #fff;
+	color: #fff;
 }
 
 @media screen and (max-width: 1023px) {
