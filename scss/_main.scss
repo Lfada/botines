@@ -1,0 +1,80 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+#banner{
+	position: relative;
+	background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 150px;
+	height: 10vh;
+
+	.navbar-brand {
+  		background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+ 	}
+}
+
+#cards {
+	@media screen and (max-width: 1023px){
+	div{
+			display: flex;
+			width: 175px;
+			height: 125px;
+			border: solid 1px black;
+			margin: 5px;
+			object-fit: fill;
+			background-image: url("imagenes/Mercurial2White.jpeg");
+			background-size: 175px;
+		}
+	}
+}
+
+#imagenes{
+	max-width: 500px;
+	max-height: 675.67px; 
+	transition: all 250ms;
+	border-radius: 15px;
+	img{
+		border: 1px solid #ccc;
+		width: 100%;
+	}
+	&:hover{
+		transform: scale(1.1);
+		&:img{
+			box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
+		}
+	}
+}
+
+
+#pie{
+	position: absolute;
+	background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 25px;
+	height: 2vh;
+	width: 100%;
+
+}
+
+.formulario{
+	position: relative;
+}
+
+#inps{
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 1rem;
+	height: 2em;
+	background-color: #ccc;
+}
+#inps:focus{
+	background-color: #fff;
+	color: #fff;
+}
