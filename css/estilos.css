@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif; }
+
 #banner {
   position: relative;
   background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
@@ -58,3 +62,7 @@
 #inps:focus {
   background-color: #fff;
   color: #fff; }
+
+.gradiente {
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261); 
+}
