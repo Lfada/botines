@@ -2,6 +2,12 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+.fuente-regular {
+	font-weight: map-get($fuentes,regular);
+}
+
+
+
 #banner{
 	position: relative;
 	background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
@@ -65,19 +71,51 @@ body{
 
 .formulario{
 	position: relative;
+	.boton {
+		border-radius: 10px;
+		border: 1px;
+		width: 100px;
+		height: 50px;
+		font-size: 1rem;
+		padding: .2rem;
+	}
+}
+
+		.primario{
+			@extend .boton; 
+				color:white;
+				background-color: blue
+		}
+		.secundario{
+			@extend .boton; 
+				color:gray;
+		}
+
+
+@mixin contenedor ($height) {
+	width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  height: $height;
+}
+
+.contenedor-mediano{
+	@include contenedor (2em);
+	background-color:#ccc;
 }
 
 #inps{
 	border: 1px solid #000;
 	border-radius: 5px;
 	font-size: 1rem;
-	height: 2em;
-	background-color: #ccc;
 }
 #inps:focus{
 	background-color: #fff;
 	color: #fff;
 }
+
 
 .gradiente{ 
   background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
