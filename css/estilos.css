@@ -1,1 +1,145 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;700&display=swap");body{font-family:'Roboto', sans-serif}.fuente-regular{font-weight:400}#banner{position:relative;background:-webkit-linear-gradient(45deg, #f3ec78, #af4261);background-repeat:no-repeat;background-size:cover;background-position:center;min-height:150px;height:10vh}#banner .navbar-brand{background:-webkit-linear-gradient(45deg, #f3ec78, #af4261);-webkit-background-clip:text;-webkit-text-fill-color:transparent}@media screen and (max-width: 1023px){#cards div{display:flex;width:175px;height:125px;border:solid 1px black;margin:5px;object-fit:fill;background-image:url("imagenes/Mercurial2White.jpeg");background-size:175px}}#imagenes{max-width:500px;max-height:675.67px;transition:all 250ms;border-radius:15px}#imagenes img{border:1px solid #ccc;width:100%}#imagenes:hover{transform:scale(1.1)}#imagenes:hover:img{box-shadow:0 0 5px 1px rgba(0,0,0,0.2)}#pie{position:absolute;background:-webkit-linear-gradient(45deg, #f3ec78, #af4261);background-repeat:no-repeat;background-size:cover;background-position:center;min-height:25px;height:2vh;width:100%}.formulario{position:relative}.formulario .boton,.formulario .primario,.formulario .secundario{border-radius:10px;border:1px;width:100px;height:50px;font-size:1rem;padding:.2rem}.primario{color:white;background-color:blue}.secundario{color:gray}.contenedor-mediano{width:100%;padding-right:var(--bs-gutter-x, 0.75rem);padding-left:var(--bs-gutter-x, 0.75rem);margin-right:auto;margin-left:auto;height:2em;background-color:#ccc}#inps{border:1px solid #000;border-radius:5px;font-size:1rem}#inps:focus{background-color:#fff;color:#fff}.gradiente{background:-webkit-linear-gradient(45deg, #f3ec78, #af4261)}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500;700;900&display=swap");
+.btn .gradient-primary {
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .fuente-regular {
+  font-weight: 400;
+}
+
+.navbar-brand {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#banner {
+  position: relative;
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 150px;
+  height: 10vh;
+}
+
+#imagenes {
+  max-width: 500px;
+  max-height: 675.67px;
+  transition: all 250ms;
+  border-radius: 15px;
+}
+
+@media all and (max-width: 1024px) {
+  #imagenes img {
+    border: 1px none;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #imagenes img {
+    float: center;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+#imagenes:hover {
+  transform: scale(1.1);
+}
+
+#imagenes:hover:img {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#imagenes a {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#pie {
+  position: absolute;
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 25px;
+  height: 2vh;
+  width: 100%;
+}
+
+.gradiente {
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+/* Codigo Formulario - pagina formulario_tarea.html*/
+.formulario {
+  position: relative;
+}
+
+.formulario .boton, .formulario .primario, .formulario .secundario {
+  border-radius: 10px;
+  border: 1px;
+  width: 100px;
+  height: 50px;
+  font-size: 1rem;
+  padding: .2rem;
+}
+
+.primario {
+  color: white;
+  background-color: blue;
+}
+
+.secundario {
+  color: black;
+}
+
+.contenedor-mediano {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  height: 2em;
+  background-color: #ccc;
+}
+
+#inps {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#inps:focus {
+  background-color: #fff;
+  color: #fff;
+}
+
+/* sobrenosotros.html */
+#titulazo {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
